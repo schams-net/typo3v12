@@ -8,3 +8,9 @@ services:
   SchamsNet\Typo3v12\:
     resource: '../Classes/*'
     exclude: '../Classes/Domain/Model/*'
+
+  SchamsNet\Typo3v12\EventListener\PageAccessListener:
+    tags:
+      - name: event.listener
+        identifier: 'pageAccessHandler'
+        event: SchamsNet\Typo3v12\EventDispatcher\PageAccessEvent
