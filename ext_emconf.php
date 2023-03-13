@@ -1,6 +1,7 @@
 <?php
+
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'TYPO3 v12',
+    'title' => 'TYPO3 v12 Test Extension',
     'description' => 'TYPO3 v12 Test Extension',
     'category' => 'be',
     'state' => 'alpha',
@@ -14,4 +15,9 @@ $EM_CONF[$_EXTKEY] = [
         'conflicts' => [],
         'suggests' => [],
     ],
+    'autoload' => [
+        'psr-4' => [
+            'SchamsNet\\Typo3v12\\' => 'Classes'
+        ]
+    ]
 ];

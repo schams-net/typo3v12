@@ -1,4 +1,6 @@
-page = PAGE
-page {
-	typeNum = 0
+# ...
+
+plugin.tx_typo3v12_frontendplugin {
+	foo = TEXT
+	foo.value = bar
 }
