@@ -1,6 +1,7 @@
 # ...
 
-plugin.tx_typo3v12_frontendplugin {
-	foo = TEXT
-	foo.value = bar
+plugin.tx_typo3v12_frontend {
+    settings {
+        foobar = lorem ipsum
+    }
 }

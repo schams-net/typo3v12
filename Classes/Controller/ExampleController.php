@@ -1,10 +1,14 @@
 <?php
 declare(strict_types=1);
-
 namespace SchamsNet\Typo3v12\Controller;
 
-use Psr\Http\Message\ResponseInterface;
-use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
+/**
+ * TYPO3 v12 Test Extension
+ * @author Michael Schams | https://schams.net
+ */
+
+use \Psr\Http\Message\ResponseInterface;
+use \TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class ExampleController extends ActionController
 {
@@ -13,6 +17,7 @@ class ExampleController extends ActionController
      */
     public function mainAction(): ResponseInterface
     {
-        return null;
+        $this->view->assign('timestamp', time());
+        return $this->htmlResponse();
     }
 }
