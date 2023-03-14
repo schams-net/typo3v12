@@ -7,6 +7,9 @@ namespace SchamsNet\Typo3v12\EventDispatcher;
  * @author Michael Schams | https://schams.net
  */
 
+use TYPO3\CMS\Core\Attribute\RemoteEvent;
+
+#[RemoteEvent(description: 'Page access event')]
 final class PageAccessEvent
 {
     /**
